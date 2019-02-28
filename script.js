@@ -10,19 +10,23 @@ main.class = 'primary';
 document.body.appendChild(main);
 
 // page heading
-const headDiv = makeDiv('heading', 'row text-center');
+const headDiv = makeDiv('Heading', 'container');
 main.appendChild(headDiv);
+// skeleton row
+const headRow = makeDiv('headRow', 'row');
+headDiv.appendChild(headRow);
 // add name
-const nameDiv = makeDiv('name', 'col-sm-8');
+const nameDiv = makeDiv('Name', 'two-third column');
 tag('h1', name, nameDiv);
-headDiv.appendChild(nameDiv);
+headRow.appendChild(nameDiv);
 // add contact info
-const contactDiv = makeDiv('contactInfo', 'col-sm-4');
+const contactDiv = makeDiv('Contact', 'one-third column');
 tag('a', data.Contact.Phone, contactDiv, 'tel:');
 tag('a', data.Contact.Email, contactDiv, 'mailto:');
 tag('a', data.Contact.Profile, contactDiv);
 tag('a', data.Contact.Repository, contactDiv);
-headDiv.appendChild(contactDiv);
+headRow.appendChild(contactDiv);
+
 
 // THIS HANDLES THE TOP LEVEL PIECES
 for(let piece in data){
@@ -61,7 +65,7 @@ function recurse(thing, div){
         if (Array.isArray(item)|| (typeof(item) === 'object')){
             collect(item, piece, div);
         }else{
-            console.log(item);
+//            console.log(item);
             tag('p', item, div);
         }
 
