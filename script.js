@@ -1,12 +1,13 @@
 import data from './data.js';
 
+// add title
 const name = data.Name.first + ' ' + data.Name.last;
 document.title = name + ' - ROCKSTAR';
 
 // main page container
 const main = document.createElement('div');
 main.id = 'main';
-main.class = 'primary';
+main.class = 'primary row';
 document.body.appendChild(main);
 
 // page heading
@@ -16,28 +17,28 @@ main.appendChild(headDiv);
 const headRow = makeDiv('headRow', 'row');
 headDiv.appendChild(headRow);
 // add name
-const nameDiv = makeDiv('Name', 'two-third column');
+const nameDiv = makeDiv('Name', 'seven columns');
 tag('h1', name, nameDiv);
 headRow.appendChild(nameDiv);
 // add contact info
-const contactDiv = makeDiv('Contact', 'one-third column');
+const contactDiv = makeDiv('Contact', 'five columns');
 tag('a', data.Contact.Phone, contactDiv, 'tel:');
 tag('a', data.Contact.Email, contactDiv, 'mailto:');
 tag('a', data.Contact.Profile, contactDiv);
 tag('a', data.Contact.Repository, contactDiv);
 headRow.appendChild(contactDiv);
 
-
-// THIS HANDLES THE TOP LEVEL PIECES
+// PRIMARY FUNCTION
+// iterates through top level elements
 for(let piece in data){
 //    console.log(piece);
     if (piece != 'Name' && piece !='Contact' ) {
         let item = data[piece];
     //    console.log(item);
-        const box = makeDiv(piece, 'section');
+        const box = makeDiv(piece, 'section container');
         tag('h2', piece, box);
 
-        const databox = makeDiv('data', 'set');
+        const databox = makeDiv('data', 'set container');
         recurse(item, databox);
 
         box.appendChild(databox);
@@ -45,17 +46,8 @@ for(let piece in data){
     }
 }
 
-function tag(tag, data, parent, field = ''){
-    let element = document.createElement(tag);
-    let text = document.createTextNode(data);
-    element.appendChild(text);
-    parent.appendChild(element);
-    if (tag ==='a'){
-        element.href = field + data;
-        parent.appendChild(document.createElement("br"));
-    }
-}
-
+// SECONDARY FUNCTIONS
+// recursive call for nested data
 function recurse(thing, div){
     for(const piece in thing){
         const item = thing[piece];
@@ -72,17 +64,18 @@ function recurse(thing, div){
     }
 }
 
+// collections should have titles
 function collect(title, collection, div){
     // Div for the collection with title
     const box = makeDiv(collection, 'collection');
     if (collection ==='Responsibilities'){
-        tag('h4', collection, box);
+        tag('h5', collection, box);
     }else{
         tag('h3', collection, box);
     }
 
     // Div for the data elements
-    const data = makeDiv('data', 'set');
+    const data = makeDiv('data', 'set container');
     recurse(title, data);
 
     // Append things
@@ -91,9 +84,22 @@ function collect(title, collection, div){
 
 }
 
+// UTILITIES FUNCTIONS PREVENT REPETITION
+// create divs
 function makeDiv(div_id, div_class){
     let temp = document.createElement('div');
     temp.id = div_id;
     temp.className = div_class;
     return temp;
+}
+// create tags
+function tag(tag, data, parent, field = ''){
+    let element = document.createElement(tag);
+    let text = document.createTextNode(data);
+    element.appendChild(text);
+    parent.appendChild(element);
+    if (tag ==='a'){
+        element.href = field + data;
+        parent.appendChild(document.createElement("br"));
+    }
 }
