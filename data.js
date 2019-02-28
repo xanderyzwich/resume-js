@@ -6,7 +6,7 @@ let data = {
   "Contact": {
     "Phone": "(901) 832-7968",
     "Email": "Corey.D.McCarty@gmail.com",
-    "Profile": "linkedin.com/in/coredmccarty",
+    "Profile": "linkedin.com/in/coreydmccarty",
     "Repository": "github.com/xanderyzwich"
   },
   "Objectives": [
