@@ -24,8 +24,8 @@ headRow.appendChild(nameDiv);
 const contactDiv = makeDiv('Contact', 'five columns');
 tag('a', data.Contact.Phone, contactDiv, 'tel:');
 tag('a', data.Contact.Email, contactDiv, 'mailto:');
-tag('a', data.Contact.Profile, contactDiv);
-tag('a', data.Contact.Repository, contactDiv);
+tag('a', data.Contact.Profile, contactDiv, 'https://www.');
+tag('a', data.Contact.Repository, contactDiv, 'https://www.');
 headRow.appendChild(contactDiv);
 
 // PRIMARY FUNCTION
