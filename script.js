@@ -14,6 +14,7 @@ document.body.appendChild(main);
 const headDiv = makeDiv('Heading', 'container');
 main.appendChild(headDiv);
 // skeleton row
+headDiv.appendChild(makeDiv('headSpace', 'row'))
 const headRow = makeDiv('headRow', 'row');
 headDiv.appendChild(headRow);
 // add name
