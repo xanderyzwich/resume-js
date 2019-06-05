@@ -25,7 +25,6 @@ let data = {
       "Position": "Software Engineer",
       "Dates": "September 2014 - Present",
       "Responsibilities": [
-        "Client customization planning, implementation, and deployment",
         "Application development and support",
         "Data design, research, and  analysis"
       ]
@@ -53,7 +52,7 @@ let data = {
     },
     "Custom Sensor Array and Driver": {
       "Role": "Project Management & Development",
-      "Stack": "Arduino"
+      "Stack": "Arduino, Java"
     },
     "Simulate Electro-Magnetic Fields": {
       "Role": "Development",
@@ -65,7 +64,7 @@ let data = {
     },
     "Robotics Team": {
       "Role": "Project Management",
-      "Stack": "Arduino and custom hardware"
+      "Stack": "Arduino, Java, custom hardware"
     },
     "Matrix Calculator": {
       "Role": "Development",
@@ -79,8 +78,8 @@ let data = {
   ],
   "Knowledge": {
       "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
-      "Frameworks": ["Spring, Django"],
-      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax, Tomcat, Android, JMS, JMX, Soap"],
+      "Frameworks": ["Spring Boot, Django Web/ORM"],
+      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax, Tomcat, Android, JMS, JMX, Soap, Rest"],
       "Tools": ["SoapUI, Eclipse, Jet Brains, Git, Subversion"]
   }
 };
