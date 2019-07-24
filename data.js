@@ -25,8 +25,9 @@ let data = {
       "Position": "Software Engineer",
       "Dates": "September 2014 - Present",
       "Responsibilities": [
-        "Application development and support",
-        "Data design, research, and  analysis"
+        "Java web service design and development",
+        "Data design, research, and analysis",
+        "Development of adhoc data migration tools"
       ]
     },
     "Various": {
@@ -43,12 +44,12 @@ let data = {
   },
   "Projects": {
     "Control table centered XML data warehouse": {
-      "Role": "Development and Support",
-      "Stack": "Java, Soap, Oracle/GoldenGate, Cassandra/Datastax, Tomcat, Bash, JMS, JMX"
+      "Role": "Application Development",
+      "Stack": "Enterprise Java, SOAP, Spring Framework, XML, Oracle DB, SQL, GoldenGate, Cassandra/Datastax, Tomcat, Bash, JMS, JMX"
     },
     "Authorization for Fraud Prevention": {
-      "Role": "Development",
-      "Stack": "Java, Soap, Weblogic, Bash"
+      "Role": "Design & Development",
+      "Stack": "Enterprise Java, SOAP, Weblogic, Bash"
     },
     "Custom Sensor Array and Driver": {
       "Role": "Project Management & Development",
@@ -56,10 +57,10 @@ let data = {
     },
     "Simulate Electro-Magnetic Fields": {
       "Role": "Development",
-      "Stack": "Python, NumPy, SciPy, MatPlotLib"
+      "Stack": "Python, NumPy, SciPy, MatPlotLib, GNU Octave"
     },
     "Distracted Driving Remedy": {
-      "Role": "Development",
+      "Role": "Research, Development, and Analysis",
       "Stack": "Android, Java"
     },
     "Robotics Team": {
@@ -79,7 +80,7 @@ let data = {
   "Knowledge": {
       "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
       "Frameworks": ["Spring Boot, Django Web/ORM"],
-      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax, Tomcat, Android, JMS, JMX, Soap, Rest"],
+      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax NoSql, Tomcat, Android, JMS, JMX, SOAP, Rest"],
       "Tools": ["SoapUI, Eclipse, Jet Brains, Git, Subversion"]
   }
 };
