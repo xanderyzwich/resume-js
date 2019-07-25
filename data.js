@@ -20,6 +20,13 @@ let data = {
     "Degree": "B.S. in Computer Engineering",
     "Graduation Date": "December 2013"
   },
+  "Knowledge": {
+      "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
+      "Frameworks": ["Spring Boot, Django Web/ORM"],
+      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax, Tomcat, Android, JMS, JMX, Soap, Rest"],
+      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax NoSql, Tomcat, Android, JMS, JMX, SOAP, Rest"],
+      "Tools": ["SoapUI, Eclipse, Jet Brains, Git, Subversion"]
+  },
   "Experience":{
     "Atos|Syntel": {
       "Position": "Software Engineer",
