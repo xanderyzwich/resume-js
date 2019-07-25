@@ -76,13 +76,7 @@ let data = {
     "Code Support",
     "Knights of Columbus",
     "GiveCamp"
-  ],
-  "Knowledge": {
-      "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
-      "Frameworks": ["Spring Boot, Django Web/ORM"],
-      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax NoSql, Tomcat, Android, JMS, JMX, SOAP, Rest"],
-      "Tools": ["SoapUI, Eclipse, Jet Brains, Git, Subversion"]
-  }
+  ]
 };
 
 export default data;
