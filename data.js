@@ -1,4 +1,15 @@
-let data = {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _Knowledge;
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var data = {
   "Name": {
     "first": "Corey",
     "last": "McCarty"
@@ -9,44 +20,27 @@ let data = {
     "Profile": "linkedin.com/in/coreydmccarty",
     "Repository": "github.com/xanderyzwich"
   },
-  "Objectives": [
-    "Write clean, scalable code",
-    "Implement maintainable full stack solutions",
-    "Elicit effective requirements for successful delivery",
-    "Avoid gratuitous tooling"
-  ],
+  "Objectives": ["Write clean, scalable code", "Implement maintainable full stack solutions", "Elicit effective requirements for successful delivery", "Avoid gratuitous tooling"],
   "Education": {
     "School": "University of Memphis - Herff College of Engineering",
     "Degree": "B.S. in Computer Engineering",
     "Graduation Date": "December 2013"
   },
-  "Knowledge": {
-      "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
-      "Frameworks": ["Spring Boot, Django Web/ORM"],
-      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax, Tomcat, Android, JMS, JMX, Soap, Rest"],
-      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax NoSql, Tomcat, Android, JMS, JMX, SOAP, Rest"],
-      "Tools": ["SoapUI, Eclipse, Jet Brains, Git, Subversion"]
-  },
-  "Experience":{
+  "Knowledge": (_Knowledge = {
+    "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
+    "Frameworks": ["Spring Boot, Django Web/ORM"],
+    "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax, Tomcat, Android, JMS, JMX, Soap, Rest"]
+  }, _defineProperty(_Knowledge, "Systems", ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax NoSql, Tomcat, Android, JMS, JMX, SOAP, Rest"]), _defineProperty(_Knowledge, "Tools", ["SoapUI, Eclipse, Jet Brains, Git, Subversion"]), _Knowledge),
+  "Experience": {
     "Atos|Syntel": {
       "Position": "Software Engineer",
       "Dates": "September 2014 - Present",
-      "Responsibilities": [
-        "Java web service design and development",
-        "Data design, research, and analysis",
-        "Development of adhoc data migration tools"
-      ]
+      "Responsibilities": ["Java web service design and development", "Data design, research, and analysis", "Development of adhoc data migration tools"]
     },
     "Various": {
       "Start Date": "July 2002 - November 2014",
       "Position": "Customer Service",
-      "Responsibilities": [
-        "Server/Bartender",
-        "Book keeping",
-        "Automotive maintenance",
-        "Employee Training",
-        "Shift management"
-      ]
+      "Responsibilities": ["Server/Bartender", "Book keeping", "Automotive maintenance", "Employee Training", "Shift management"]
     }
   },
   "Projects": {
@@ -79,11 +73,7 @@ let data = {
       "Stack": "C++"
     }
   },
-  "Volunteer Work": [
-    "Code Support",
-    "Knights of Columbus",
-    "GiveCamp"
-  ]
+  "Volunteer Work": ["Code Support", "Knights of Columbus", "GiveCamp"]
 };
-
-export default data;
+var _default = data;
+exports.default = _default;
