@@ -1,4 +1,4 @@
-import data from './data.js';
+var data = require('./data.js');
 
 // add title
 const name = data.Name.first + ' ' + data.Name.last;
