@@ -2,8 +2,8 @@ language: node_js
 node_js:
   - 8
 before_script:
-  - npm install @babel/core" -g
-  - npm install parcel-bundler -g
+  - npm install @babel/core" --save-dev
+  - npm install parcel-bundler --save-dev
 script: parcel build src/index.html --out-dir .
 deploy:
   fqdn: coreydmccarty.dev
