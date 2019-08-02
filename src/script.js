@@ -8,7 +8,7 @@ document.title = name + ' - ROCKSTAR';
 const main = document.createElement('div');
 main.id = 'main';
 main.class = 'primary row';
-document.body.appendChild(main);
+document.getElementsByTagName('body')[0].appendChild(main);
 
 // page heading
 const headDiv = makeDiv('Heading', 'container');
