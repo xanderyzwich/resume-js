@@ -1,17 +1,17 @@
 {
-    "name": "github.io",
+    "name": "resume",
     "version": "1.0.0",
     "description": "What's the best way to utilize one of those fancy [my name].dev domains?  What about a resume that is entirely rendered from JavaScript data!",
     "author": "Corey McCarty",
     "license": "ISC",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/xanderyzwich/xanderyzwich.github.io.git"
+        "url": "git+https://github.com/xanderyzwich/resume"
     },
     "bugs": {
-        "url": "https://github.com/xanderyzwich/xanderyzwich.github.io/issues"
+        "url": "https://github.com/xanderyzwich/resume/issues"
     },
-    "homepage": "https://github.com/xanderyzwich/xanderyzwich.github.io#readme",
+    "homepage": "https://github.com/xanderyzwich/resume#readme",
     "private": true,
     "devDependencies": {
         "@babel/core": "^7.5.5",
