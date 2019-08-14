@@ -4,7 +4,7 @@ node_js:
 before_script:
   - npm install @babel/core --save-dev
   - npm install parcel-bundler --save-dev
-script: parcel build src/index.html
+script: parcel build src/index.html; rm -rf .cache; rm -rf node_modules
 deploy:
   fqdn: coreydmccarty.dev
   target_branch: master
