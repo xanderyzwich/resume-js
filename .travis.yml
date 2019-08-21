@@ -4,13 +4,13 @@ node_js:
 before_script:
   - npm install @babel/core --save-dev
   - npm install parcel-bundler --save-dev
-script: parcel build src/index.html; rm -rf .cache; rm -rf node_modules
+script: parcel build src/index.html
 deploy:
   fqdn: coreydmccarty.dev/resume
   local-dir: dist
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
   keep-history: true
   on:
     branch: master
