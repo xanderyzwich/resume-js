@@ -6,7 +6,7 @@ before_script:
   - npm install parcel-bundler --save-dev
 script: parcel build src/index.html; rm -rf .cache; rm -rf node_modules
 deploy:
-  fqdn: coreydmccarty.dev
+  fqdn: coreydmccarty.dev/resume
   local-dir: dist
   provider: pages
   skip-cleanup: true
