@@ -34,17 +34,13 @@ let data = {
         "Reduce QC breakage with test standardization"
       ]
     },
-    "Various": {
+	"Various": {
       "Start Date": "July 2002 - November 2014",
-      "Position": "Customer Service and Production",
-      "Responsibilities": [
-        "Inventory Management",
-        "Information Processing",
-        "Employee Training",
-        "Automotive Maintenance",
-        "Printing & Bindery",
-        "Textile Production Control",
-        "Food Service / Bar tending"
+      "Positions": [
+	    "Restaurant Server/Bartender - 6 years",
+		"Printing and Bindery Production - 1 year",
+        "Oil Change Technician/Manager - 3 years",
+        "Fast Food Service / Team Lead - 2 years"
       ]
     }
   },
