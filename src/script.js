@@ -13,14 +13,17 @@ document.getElementsByTagName('body')[0].appendChild(main);
 // page heading
 const headDiv = makeDiv('Heading', 'container');
 main.appendChild(headDiv);
+
 // skeleton row
 headDiv.appendChild(makeDiv('headSpace', 'row'))
 const headRow = makeDiv('headRow', 'row');
 headDiv.appendChild(headRow);
+
 // add name
 const nameDiv = makeDiv('Name', 'seven columns');
 tag('h1', name, nameDiv);
 headRow.appendChild(nameDiv);
+
 // add contact info
 const contactDiv = makeDiv('Contact', 'five columns');
 tag('a', data.Contact.Phone, contactDiv, 'tel:');
@@ -32,10 +35,8 @@ headRow.appendChild(contactDiv);
 // PRIMARY FUNCTION
 // iterates through top level elements
 for(let piece in data){
-//    console.log(piece);
     if (piece != 'Name' && piece !='Contact' ) {
         let item = data[piece];
-    //    console.log(item);
         const box = makeDiv(piece, 'section container');
         tag('h2', piece, box);
 
@@ -58,7 +59,6 @@ function recurse(thing, div){
         if (Array.isArray(item)|| (typeof(item) === 'object')){
             collect(item, piece, div);
         }else{
-//            console.log(item);
             tag('p', item, div);
         }
 
@@ -93,6 +93,7 @@ function makeDiv(div_id, div_class){
     temp.className = div_class;
     return temp;
 }
+
 // create tags
 function tag(tag, data, parent, field = ''){
     let element = document.createElement(tag);
