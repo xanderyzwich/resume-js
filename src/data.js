@@ -29,7 +29,7 @@ let data = {
         "Migrate legacy applications into Pivotal Cloud Foundry",
         "Expedite development process by internalizing CI/CD pipeline management",
         "Streamline data model to reduce transaction times and storage",
-        "Increase team value by cross-training of team members"
+        "Increase team value by cross-training of team members",
         "Architect solutions for legacy issues",
         "Reduce QC breakage with test standardization"
       ]
@@ -44,14 +44,21 @@ let data = {
       ]
     }
   },
+ "Skills": {
+   "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, YML"],
+   "Deployments": [ "Pivotal Cloud Foundry, RedHat, Tomcat, Springboot, Oracle DB, Datastax/Cassandra, JAMstack, Android, Arduino" ],
+   "Version/Build Tools": [ "Git, SVN, Ant, Gradle, Jenkins, TravisCI, Nexus" ],
+   "Frameworks": [ "Spring, Slf4j, Log4j, LogBack, Django" ],
+   "Development Tools": [ "JetBrains, Eclipse, Oracle SQL Developer, HPE Agile Manager, SoapUI" ]
+ },
   "Projects": {
     "XML data warehouse": {
       "Role": "Application Development Lifecycle",
-      "Stack": "Enterprise Java, Control Table Design Pattern, SOAP, Spring Framework, XML, Oracle DB, SQL, Cassandra/Datastax, Tomcat, Bash, JMS, JMX"
+      "Stack": "Java, Spring, Oracle DB, SOAP, XML, Cassandra/Datastax, Tomcat, Bash, JMS, JMX"
     },
     "Authorization for Fraud Prevention": {
       "Role": "Architect & Development",
-      "Stack": "Enterprise Java, SOAP, Weblogic, Bash"
+      "Stack": "Java, Spring, SOAP, Weblogic, Bash"
     },
     "Custom Sensor Array and Driver": {
       "Role": "Project Management & Development",
@@ -78,14 +85,7 @@ let data = {
     "Code Support",
     "Knights of Columbus",
     "GiveCamp"
-  ],
-  "Skills": {
-    "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, YML"],
-    "Deployments": [ "Pivotal Cloud Foundry, RedHat, Tomcat, Springboot, Oracle DB, Datastax/Cassandra, JAMstack, Android, Arduino" ],
-    "Version/Build Tools": [ "Git, SVN, Ant, Gradle, Jenkins, TravisCI, Nexus" ],
-    "Frameworks": [ "Spring, Slf4j, Log4j, LogBack, Django" ],
-    "Development Tools": [ "JetBrains, Eclipse, Oracle SQL Developer, HPE Agile Manager, SoapUI" ]
-  }
+  ]
 };
 
 export default data;
