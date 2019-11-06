@@ -83,12 +83,12 @@ let data = {
     "Knights of Columbus",
     "GiveCamp"
   ],
-  "Knowledge": {
-      "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, HTML/CSS"],
-      "Frameworks": ["Spring Boot, Log4j, Slf4j, LogBack, Django Web/ORM"],
-      "Systems": ["Windows, Red Hat Linux, Oracle Database, Cassandra/Datastax NoSql, Tomcat, Android, Arduino"],
-      "Technologies": ["Web Services, Java Messaging Service - JMS, Java Management Extensions -JMX, SOAP, Rest, Load Balancers"],
-      "Tools": ["SoapUI, Eclipse, Jet Brains (IntelliJ & PyCharm), Git, Subversion, HPE Agile Manager, Oracle SQL Developer"]
+  "Skills": {
+    "Languages": ["Java, Python, SQL, JavaScript, ASM, C/C++, Bash, XML, YML"],
+    "Deployments": [ "Pivotal Cloud Foundry, RedHat, Tomcat, Springboot, Oracle DB, Datastax/Cassandra, JAMstack, Android, Arduino" ],
+    "Version/Build Tools": [ "Git, SVN, Ant, Gradle, Jenkins, TravisCI, Nexus" ],
+    "Frameworks": [ "Spring, Slf4j, Log4j, LogBack, Django" ],
+    "Development Tools": [ "JetBrains, Eclipse, Oracle SQL Developer, HPE Agile Manager, SoapUI" ]
   }
 };
 
