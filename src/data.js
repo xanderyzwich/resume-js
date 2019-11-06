@@ -25,13 +25,13 @@ let data = {
     "Atos|Syntel": {
       "Position": "Software Engineer",
       "Dates": "September 2014 - Present",
-      "Responsibilities": [
-        "Analyze big data",
-        "Perform lifecycle activities for Java web service",
-        "Overhaul applications to overcome technical debt",
-        "Improve data model for manageability and reliability",
-        "Automate data management processes",
-        "Control devops processes"
+      "Achievements": [
+        "Migrate legacy applications into Pivotal Cloud Foundry",
+        "Expedite development process by internalizing CI/CD pipeline management",
+        "Streamline data model to reduce transaction times and storage",
+        "Increase team value by cross-training of team members"
+        "Architect solutions for legacy issues",
+        "Reduce QC breakage with test standardization"
       ]
     },
     "Various": {
