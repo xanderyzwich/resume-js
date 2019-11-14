@@ -69,7 +69,7 @@ function recurse(thing, div){
 function collect(title, collection, div){
     // Div for the collection with title
     const box = makeDiv(collection, 'collection');
-    if (collection ==='Responsibilities'){
+    if (collection ==='Responsibilities' || collection === 'Achievements'){
         tag('h5', collection, box);
     }else{
         tag('h3', collection, box);
