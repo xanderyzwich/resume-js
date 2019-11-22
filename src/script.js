@@ -1,4 +1,4 @@
-import data from './newData.js';
+import data from './data.js';
 
 // add title
 const name = data.head.name.first + ' ' + data.head.name.last;
