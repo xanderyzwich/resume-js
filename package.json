@@ -15,11 +15,12 @@
     "private": true,
     "devDependencies": {
         "@babel/core": "^7.5.5",
-        "parcel-bundler": "^1.12.3"
+        "parcel-bundler": "^1.12.4"
     },
     "scripts": {
         "dev": "parcel src/index.html",
-        "build": "parcel build src/index.html --out-dir ."
+        "build": "parcel build src/index.html --out-dir .",
+        "pdf": "chrome --headless --disable-gpu --print-to-pdf=file1.pdf index.html"
     },
     "babel": {
         "presets": [
@@ -35,5 +36,6 @@
         "last 1 version",
         "not dead",
         "> 0.2%"
-    ]
+    ],
+    "dependencies": {}
 }

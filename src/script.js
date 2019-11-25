@@ -7,23 +7,23 @@ document.title = name + ' - ROCKSTAR';
 // main page container
 const main = document.createElement('div');
 main.id = 'main';
-main.class = 'primary row';
+main.className = 'container primary'; // I'm dumb
 document.body.appendChild(main);
 
 // page heading
-const headDiv = makeDiv('Heading', 'container');
+const headDiv = makeDiv('Heading', 'box');
 main.appendChild(headDiv);
 
 // skeleton row
-headDiv.appendChild(makeDiv('headSpace', 'row'))
+//headDiv.appendChild(makeDiv('headSpace', 'row'))
 const headRow = makeDiv('headRow', 'row');
 headDiv.appendChild(headRow);
 
-const nameDiv = makeDiv('Name', 'seven columns');
+const nameDiv = makeDiv('Name', 'col s6 m7 l8');
 tag('h1', name, nameDiv);
 headRow.appendChild(nameDiv);
 
-const contactDiv = makeDiv('Contact', 'five columns');
+const contactDiv = makeDiv('Contact', 'col s6 m5 l4');
 for(let entry in data.head.contact){
     tag('a', entry, contactDiv, data.head.contact[entry].url); // todo: cast entry to string
 }
@@ -35,10 +35,10 @@ let headLevel = 2;
 for(var piece in data){
 	if(piece === 'head'){	continue;	} // skip the header
 	let item = data[piece];
-	const box = makeDiv(piece, 'section container');
+	const box = makeDiv(piece, 'section row');
 	tag(h_increment(), piece, box);
 
-	const databox = makeDiv('data', 'set container');
+	const databox = makeDiv('data', 'set col s11 offset-s1');
 	recurse(item, databox);
 
 	box.appendChild(databox);
@@ -75,8 +75,6 @@ function tag(tag, data, parent, field = ''){
     let element = document.createElement(tag);
     let text = document.createTextNode(data);
     if (field!==''){
-    	console.log("shit won't work");
-    	console.error("I got here");
     	let link = document.createElement('a');
     	link.href = field;
     	link.appendChild(text);
@@ -93,7 +91,7 @@ function tag(tag, data, parent, field = ''){
 // collections should have titles
 function collect(title, collection, div){
     // Div for the collection with title
-    const box = makeDiv(collection, 'collection');
+    const box = makeDiv(collection, 'list');
     if (collection.hasOwnProperty('url')){
     	console.log("I found a URL on " + collection)
 		tag(h_increment(), collection, box, collection['url']);
@@ -102,7 +100,7 @@ function collect(title, collection, div){
     	tag(h_increment(), collection, box);
 	}
     // Div for the data elements
-    const data = makeDiv('data', 'set container');
+    const data = makeDiv('data', 'set col s11 offset-s1');
     recurse(title, data);
     h_decrement();
     // Append things
