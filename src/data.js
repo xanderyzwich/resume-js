@@ -27,6 +27,9 @@ let data = {
     'Development Tools': ['JetBrains, Eclipse, Oracle SQL Developer, HPE Agile Manager, SoapUI']
   },
   'Projects': {
+  	'Customer Hieracharchy Management': {
+  		'Application Modernization': ['Java, Springboot, Pivotal Cloud Foundry, Jenkins, GitLab, Oracle DB, JMS, Soap']
+  	}
     'XML data warehouse': {
       'Application Development Lifecycle': ['Java, Spring, Oracle DB, SOAP, XML, Cassandra/Datastax, Tomcat, Bash, JMS, JMX']
     },
