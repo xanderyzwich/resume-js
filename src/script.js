@@ -25,7 +25,7 @@ headRow.appendChild(nameDiv);
 
 const contactDiv = makeDiv('Contact', 'five columns');
 for(let entry in data.head.contact){
-    tag('a', entry, contactDiv, data.head.contact[entry]);
+    tag('a', entry, contactDiv, data.head.contact[entry].url); // todo: cast entry to string
 }
 headRow.appendChild(contactDiv);
 
