@@ -38,7 +38,7 @@ for(var piece in data){
 	const box = makeDiv(piece, 'section row');
 	tag(h_increment(), piece, box);
 
-	const databox = makeDiv('data', 'set col s11 offset-s1');
+	const databox = makeDiv('data', 'set col s12 offset-s1');
 	recurse(item, databox);
 
 	box.appendChild(databox);
@@ -100,7 +100,7 @@ function collect(title, collection, div){
     	tag(h_increment(), collection, box);
 	}
     // Div for the data elements
-    const data = makeDiv('data', 'set col s11 offset-s1');
+    const data = makeDiv('data', 'set col s12 offset-s1');
     recurse(title, data);
     h_decrement();
     // Append things
