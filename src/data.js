@@ -74,19 +74,19 @@ let data = {
         '2': 'Contribute to the open source tools through development, guidance, and review of pull requests.',
         '3': 'Guide development of 5,000 person community as member of direction board.',
         '4': 'Mentor developers of all experience levels to resolve problems and learn.',
-        '5': 'Learn through teaching of software design principles, Python, Java, Javascript, databases, and software development tools'
+        '5': 'Learn through teaching of software design principles, Python, Java, Javascript, databases, and software development tools.'
       },
       'Give Camp - Volunteer': {
         '1': 'February 2019',
         '2': 'Take part in rapid development weekend with tech community utilizing agile methodologies.',
-        '3': 'Create Wordpress sites for local charity organizations',
-        '4': 'Migrate existing static content site to Wordpress by reverse engineering and bash scripting'
+        '3': 'Create Wordpress sites for local charity organizations.',
+        '4': 'Migrate existing static content site to Wordpress by reverse engineering and bash scripting.'
       }
     },
     'Volunteer Work': {
       'Knights of Columbus': {
       '1': 'November 2016 - Present',
-      '2': 'Manage social media presence',
+      '2': 'Manage social media presence.',
       '3': 'Perform in service projects for charity and community.',
       }
     },

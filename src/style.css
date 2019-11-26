@@ -31,52 +31,50 @@
 /*BY TAG TYPE*/
 h1, h2{
  	font-family: var(--font-bitter);
- }
- h1{
- 	color: var(--university-blue);
+}
+h1{
+  color: var(--university-blue);
  	font-size: 4.2rem;
- }
- h2{
+}
+h2{
  	color: var(--university-gray);
  	padding-left: 0.75rem;
  	font-size: 3.2rem;
- }
- h3{
+}
+h3{
  	color: var(--rhythm-blue);
  	font-size: 1.9rem;
- }
- h4{
+}
+h4{
  	color: var(--patterson-gray);
  	font-size: 1.8rem;
- }
- h5{
+}
+h5{
  	color: var(--spirit-blue);
  	font-size: 1.7rem;
- }
- h6{
+}
+h6{
  	color: var(--highland-gray);
  	font-size: 1.6rem;
- }
- p{
+}
+p{
    font-size: 1.5rem;
    padding-left: -0.5em;
    text-indent: -1.5em;
    padding-top: 0em;
    padding-bottom: 0.2em;
-
- }
- a:visited {
-  color: var(--true-blue);
- }
- a:link {
-  color: var(--spirit-blue);
- }
-
-p:not(:first-child)::before { /* BULLET POINTS FOR LISTS */
-  content: var(--bullet-point);
 }
-#Previous\ Work\ Experience p:first-child::before{ /* SPECIAL CASE */
+a:visited {
+  color: var(--true-blue);
+}
+a:link {
+  color: var(--spirit-blue);
+}
+
+p:not(:first-child)::before,
+#Previous\ Work\ Experience p:first-child::before{ /* BULLET POINTS FOR LISTS */
   content: var(--bullet-point);
+  color: var(--true-blue);
 }
  /*BY ID AND CLASS*/
 #main.container.primary{
