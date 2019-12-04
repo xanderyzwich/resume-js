@@ -38,7 +38,7 @@ for(var piece in data){
 	const box = makeDiv(piece, 'section row');
 	tag(h_increment(), piece, box);
 
-	const databox = makeDiv('data', 'set col s12 offset-s1');
+	const databox = makeDiv('data', 'set col offset-s1');
 	recurse(item, databox);
 
 	box.appendChild(databox);
@@ -84,14 +84,17 @@ function tag(tag, data, parent, field = ''){
     }
 	parent.appendChild(element);
 	if (tag ==='a'){
-        element.href = field;
-        parent.appendChild(document.createElement("br"));
-    }
+    element.href = field;
+    parent.appendChild(document.createElement("br"));
+  }else if (tag != 'h1' && tag.includes('h')){
+    element.class = 'col s12';
+  }
+
 }
 // collections should have titles
 function collect(title, collection, div){
     // Div for the collection with title
-    const box = makeDiv(collection, 'list');
+    const box = makeDiv(collection, 'list col s12');
     if (collection.hasOwnProperty('url')){
     	console.log("I found a URL on " + collection)
 		tag(h_increment(), collection, box, collection['url']);
@@ -100,7 +103,7 @@ function collect(title, collection, div){
     	tag(h_increment(), collection, box);
 	}
     // Div for the data elements
-    const data = makeDiv('data', 'set col s12 offset-s1');
+    const data = makeDiv('data', 'set col offset-s1');
     recurse(title, data);
     h_decrement();
     // Append things

@@ -10,22 +10,18 @@
 	--spirit-blue:		#00ADE6;
 	--river-blue:		#D0E6E8;
  	--true-blue:		#3569A7;
-
   /* GRAYS */
  	--university-gray:	#898D8D;
  	--patterson-gray:	#717C7D;
  	--highland-gray:	#BFCDCB;
 
  	--bluff-beige:		#F5E9BD;
-
  	--font-bitter:		'Bitter'; /*serif*/
-
  	--bullet-point:   '  -  ';
 
-  background: linear-gradient(to right, transparent 90%, var(--river-blue)),
-  linear-gradient(to left, var(--bluff-beige) 90%, var(--river-blue));
-
  	font-family: 'Montserrat';
+ 	font-size: 75%;
+ 	color: black;
 }
 
 /*BY TAG TYPE*/
@@ -58,11 +54,11 @@ h6{
  	font-size: 1.6rem;
 }
 p{
-   font-size: 1.5rem;
-   padding-left: -0.5em;
-   text-indent: -1.5em;
-   padding-top: 0em;
-   padding-bottom: 0.2em;
+   font-size: 1.8rem;
+   padding-left: -1rem;
+   text-indent: -2rem;
+   padding-top: 0rem;
+   padding-bottom: 0.2rem;
 }
 a:visited {
   color: var(--true-blue);
@@ -78,7 +74,6 @@ p:not(:first-child)::before,
 }
  /*BY ID AND CLASS*/
 #main.container.primary{
-  background-color: var(--bluff-beige);
   margin-bottom: 2.8rem;
 }
 #Contact{ /*align with the name h1*/
@@ -88,6 +83,7 @@ p:not(:first-child)::before,
  	margin-top: 2px !important;
  	margin-bottom: 0px !important;
  	padding-right: 0px !important;
+ 	font-weight: bold;
  }
 #Work\ Experience > #data{
   margin-left: 0 !important;
@@ -97,5 +93,5 @@ p:not(:first-child)::before,
   padding-bottom: 0;
 }
 .offset-s1{
-  margin-left: 3em !important;
+  margin-left: 3rem !important;
 }
