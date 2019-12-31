@@ -23,7 +23,7 @@ let data = {
     'Languages': ['Java, Python, SQL, JavaScript, Bash'],
     'Deployments': ['Pivotal Cloud Foundry, RedHat, Tomcat, Springboot, Oracle DB, Datastax/Cassandra NoSQL, JamStack, Android, Arduino'],
     'DevOps': ['Git, SVN, Ant, Gradle, Jenkins, TravisCI, Nexus'],
-    'Frameworks': ['Spring, Slf4j, Log4j, LogBack, Django'],
+    'Frameworks': ['Spring, Slf4j, Log4j, LogBack, Django, ReactJS'],
     'Development/Testing Tools': ['JetBrains, Eclipse, Oracle SQL Developer, HPE Agile Manager, SoapUI']
   },
   'Projects': {
